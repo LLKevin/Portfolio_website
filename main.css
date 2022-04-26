@@ -1,0 +1,108 @@
+html, body{
+    margin: 0;
+    padding:0;
+    height: 100%;
+}
+
+.menu-icon{
+    
+    color: white;
+    position: absolute;
+}
+
+.top-nav{
+    display: flex;
+    justify-content: right;
+    letter-spacing: 2px;
+    padding: 3% 0% 0% 0%;
+    position: absolute;
+    text-transform: uppercase;
+    width:100%;
+}
+
+.top-nav ul{
+    display: flex;
+    justify-content: right;
+    margin: 0px 5% 0px 0px;
+}
+
+.top-nav li{
+    color: white;
+    flex-direction: row;
+    font-size: 20px;
+    list-style: none;
+    padding: 1em;
+    text-align: left;
+}
+
+.top-nav li:hover{
+    color: #add8e6;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.banner{
+ align-items: center;
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/banner.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 100%;
+}
+
+.banner button{
+    background: none;
+    border: 3px solid #99cfe0;
+    color: #99cfe0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+
+    text-align: center;
+    padding: 30px;
+    
+    text-transform: capitalize;
+    width:230px;
+    vertical-align: middle;
+    height:auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.banner button:hover{
+    color: lightcoral;
+    border: 3px solid lightcoral;
+    -webkit-transition: color  0.5s ease-in, border 0.5s ease-in;
+    transition:   color  0.5s ease-in, border 0.5s ease-in ;
+    -moz-transition: color  0.5s ease-in, border 0.5s ease-in;
+}
+
+.banner h1{ 
+    color: white;
+    font-size: 230%;
+    line-height: 1.6;
+    letter-spacing: 0.23em;
+    padding: 1%;
+}
+.banner-inner{
+    text-align: center;
+    width:80%;
+}
+
+@media only screen and (max-width: 700px) {
+    .banner h1 {
+        font-size: 180%; 
+    }
+    
+}
+
+@media only screen and (max-width: 560px) {
+    .banner h1 {
+        font-size: 150%; 
+    }
+    .top-nav ul{
+        display: none;
+        flex-direction: column;
+    }
+}
